@@ -15,7 +15,7 @@ public class StyleTable extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.table);
 
-		TableFixHeaders tableFixHeaders = (TableFixHeaders) findViewById(R.id.table);
+		TableFixHeaders tableFixHeaders = findViewById(R.id.table);
 		tableFixHeaders.setAdapter(new MyAdapter(this));
 	}
 
@@ -76,7 +76,7 @@ public class StyleTable extends Activity {
 
 		@Override
 		public int getItemViewType(int row, int column) {
-			if (row < 0) {
+			if (row <= 0) {
 				return 0;
 			} else {
 				return 1;

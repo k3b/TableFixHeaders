@@ -13,7 +13,7 @@ public class SimpleTable extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.table);
 
-		TableFixHeaders tableFixHeaders = (TableFixHeaders) findViewById(R.id.table);
+		TableFixHeaders tableFixHeaders = findViewById(R.id.table);
 		MatrixTableAdapter<String> matrixTableAdapter = new MatrixTableAdapter<String>(this, new String[][] {
 				{
 						"Header 1",
